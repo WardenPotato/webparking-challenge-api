@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Webparking Challenge",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
