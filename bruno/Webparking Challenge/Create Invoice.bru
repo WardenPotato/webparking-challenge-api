@@ -1,0 +1,30 @@
+meta {
+  name: Create Invoice
+  type: http
+  seq: 1
+}
+
+post {
+  url: 127.0.0.1:8000/api/sales-invoices
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "InvoiceID": "3f4d7914-f369-4448-97d5-155b6ca531bc",
+    "Journal": "3f4e7914-f369-4448-97d5-155b6ca531bc",
+    "OrderedBy": "3f4e7914-f369-4448-97d5-155b6ca531bc",
+    "SalesInvoiceLines": [
+      {
+        "GLAccount": "3f4e7914-f369-4448-97d5-155b6ca531bc",
+        "InvoiceID": "3f4e7914-f369-4448-97d5-155b6ca531bc",
+        "Item": "3f4e7914-f369-4448-97d5-155b6ca531bc"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}
